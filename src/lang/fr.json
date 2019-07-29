@@ -1,6 +1,6 @@
 {
 	"AuthenticationFooter": {
-		"already_account": "Vous avez déjà un compte?",
+		"already_account": "Avez vous déjà un compte?",
 		"demo_account": "Compte démo",
 		"login": "S'identifier",
 		"not_account": "Vous n'avez pas encore de compte?",
@@ -10,7 +10,7 @@
 	"AutoimportTags": {
 		"accept_rules": "Accepter les règles du groupe?",
 		"belonged_groups_not_found": "Vous n'appartenez à aucun groupe nommé <strong>{search}</strong>.<br>Essayez de rechercher des groupes auxquels vous n'êtes pas associé.",
-		"joined_groups": "Afficher uniquement les groupes joints",
+		"joined_groups": "Afficher uniquement les groupes auxquels vous appartenez",
 		"title": "Rejoindre le groupe Flickr"
 	},
 	"ConfirmAccount": {
@@ -23,11 +23,11 @@
 	"GroupTag": {
 		"count_tags": "{count} / {total} photos portent la balise '{name}'",
 		"error": "Nous n'avons pas pu récupérer vos données",
-		"error_saving_tag": "Erreur lors de l'enregistrement du tag",
+		"error_saving_tag": "Erreur lors de l'enregistrement de la balise",
 		"no_data": "Nous ne pourrions pas suggérer de tags. Appuyez sur <kbd>entrez</kbd> pour en ajouter un.",
 		"no_photos_found": "Vous n'avez pas de photos avec la balise '{tag}'",
 		"not_enought_data": "Pas assez de données",
-		"not_enought_data_suggestion": "Ajouter plus de tags à vos photos de ce groupe",
+		"not_enought_data_suggestion": "Ajouter plus de balises à vos photos de ce groupe",
 		"only_new_photos": "Importer uniquement de nouvelles photos",
 		"only_new_photos_hint1": "Seules les nouvelles photos de votre flux de photos contenant les balises sélectionnées seront ajoutées. Si vous souhaitez ajouter toutes vos photos actuelles correspondant à <strong>[{comboTags}]</strong> , désactivez cette option.",
 		"only_new_photos_hint2": "Toutes les photos correspondant à <strong>[{comboTags}]</strong> seront ajoutées. Vous pouvez voir quelles photos seront ajoutées ci-dessous.",
@@ -62,15 +62,15 @@
 	},
 	"LoginUser": {
 		"login": "Connectez-vous à Skedr.io",
-		"login_successful": "Vous avez été connecté"
+		"login_successful": "Vous êtes connecté"
 	},
 	"Profile": {
-		"not_subscribed": "Vous n'êtes pas abonné à Skedr.io. S'il vous plaît envisager de soutenir le projet. Nous offrons un rabais spécial pour tous les premiers utilisateurs. Bénéficiez d'une réduction de 50% sur un paiement mensuel.",
+		"not_subscribed": "Vous n'êtes pas abonné à Skedr.io. S'il vous plaît envisager de soutenir le projet. Nous offrons un rabais spécial pour tous les premiers utilisateurs. Bénéficiez vous d'une réduction de 50% sur un paiement mensuel.",
 		"payment_details": "Détails de paiement:",
 		"plan_info": "Paiement tous les {period} ({trialDays} jours de période d'essai) | Paiement tous les {count} {period} ({trialDays} jours d'essai)",
-		"subscribed": "Merci pour votre subscription! Votre soutien compte beaucoup.",
+		"subscribed": "Merci pour votre suscription! Votre soutien compte beaucoup.",
 		"subtitle": "Plan",
-		"title": "abonnement",
+		"title": "Abonnement",
 		"verify_email": "Vérifiez votre émail avant de soumettre le paiement"
 	},
 	"ResetPassword": {
@@ -86,7 +86,7 @@
 		"remove": "Retirer de la liste",
 		"search_groups": "Groupes de recherche pour partager vos images",
 		"selected_groups": "aucun groupe sélectionné | 1 groupe sélectionné | {count} groupes sélectionnés",
-		"shared_groups": "Photo non partagée dans les groupes | Partagé en 1 groupe | Partagé en {count} groupes"
+		"shared_groups": "Photo non partagée dans les groupes | Partagée dans 1 groupe | Partagée dans {count} groupes"
 	},
 	"SignupUser": {
 		"account_created": "Compte créé avec succès",
@@ -102,15 +102,15 @@
 	"UserProfile": {
 		"code_sent": "Un code a été envoyé à votre nouvelle adresse e-mail. Confirmez votre nouvelle adresse e-mail.",
 		"confirmation_code": "Code de confirmation",
-		"error_verify_email": "Email besoin de vérification.",
+		"error_verify_email": "L'émail a besoin de vérification.",
 		"title": "Profil",
-		"verify_email": "Vérifier les courriels"
+		"verify_email": "Vérifier l'émail"
 	},
 	"btn": {
-		"accept": "Acceptez",
+		"accept": "Accepter",
 		"cancel": "annuler",
-		"change_email": "Changer l'e-mail",
-		"clear": "Clair",
+		"change_email": "Changer l'émail",
+		"clear": "effacer",
 		"confirm": "Confirmer",
 		"connect": "Relier",
 		"continue": "Continuer",
@@ -135,7 +135,7 @@
 		"family_name": "Entrez votre nom de famille",
 		"first_name": "Entrez votre prénom",
 		"new_password": "Entrez votre nouveau mot de passe",
-		"password": "Tapez votre mot de passe",
+		"password": "Entrez votre mot de passe",
 		"search": "Chercher"
 	},
 	"loading": "Chargement ...",
