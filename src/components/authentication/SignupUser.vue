@@ -1,17 +1,17 @@
 <template>
   <div>
-    <v-progress-linear 
-      v-show="protectedUI" 
-      :indeterminate="true" 
-      height="3" 
+    <v-progress-linear
+      v-show="protectedUI"
+      :indeterminate="true"
+      height="3"
       class="my-0 topFloat" />
     <v-toolbar dark color="primary">
       <v-toolbar-title>Create a Skedr.io account</v-toolbar-title>
     </v-toolbar>
     <div :class="{'pa-0': $vuetify.breakpoint.xs, 'px-5 pt-3': $vuetify.breakpoint.smAndUp}">
-      <v-stepper 
-        v-model="step" 
-        class="elevation-0" 
+      <v-stepper
+        v-model="step"
+        class="elevation-0"
         vertical>
         <v-stepper-step :complete="step > 1" step="1">Sign up with Flickr</v-stepper-step>
         <v-stepper-content step="1">
@@ -20,9 +20,9 @@
             be redirected to your flickr account to grant us access.
           </small>
           <br >
-          <v-btn 
-            :disabled="protectedUI" 
-            color="primary" 
+          <v-btn
+            :disabled="protectedUI"
+            color="primary"
             @click="handleSubmit">{{ button }}</v-btn>
         </v-stepper-content>
         <v-stepper-step :complete="step > 2" step="2">Create your account</v-stepper-step>
@@ -51,9 +51,9 @@
               prepend-icon="lock"
               @click:append="() => (passVisibility = !passVisibility)"
             />
-            <v-btn 
-              :disabled="protectedUI || disableAllInputs" 
-              type="submit" 
+            <v-btn
+              :disabled="protectedUI || disableAllInputs"
+              type="submit"
               color="primary">Signup</v-btn>
           </v-form>
         </v-stepper-content>
@@ -69,13 +69,13 @@
               label="Code"
               counter="6"
             />
-            <v-btn 
-              flat 
-              color="primary" 
+            <v-btn
+              flat
+              color="primary"
               @click.stop.prevent="resendCode">Resend</v-btn>
-            <v-btn 
-              :disabled="protectedUI || disableAllInputs" 
-              type="submit" 
+            <v-btn
+              :disabled="protectedUI || disableAllInputs"
+              type="submit"
               color="primary">Confirm</v-btn>
           </v-form>
         </v-stepper-content>
