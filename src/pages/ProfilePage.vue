@@ -10,33 +10,68 @@
           <template slot-scope="{ result: { error, data, loading }, query }">
             <v-container v-if="error">{{ error }}</v-container>
             <v-container v-else>
-              <h1>Subscription</h1>
+              <h1 v-t="'Profile.title'"/>
               <div v-if="data && data.userSubscription && data.userSubscription.status">
-                <p>Thanks for subscribing! Your support means a lot.</p>
-              </div>
-              <div v-else>
-                <p>You are not subscribed to Skedr.io. Please consider supporting the project. We are offering a special discount for all early adopters. Benefit from a 50% discount on a monthly payment.</p>
-              </div>
-              <div v-if="data && data.plans">
-                <h2>Plan</h2>
-                <v-list>
-                  <v-list-tile
-                    v-for="plan in data.plans"
-                    :key="plan.id">
-                    <v-list-tile-content>
-                      <v-list-tile-title>{{ plan.nickname }}: {{ parseInt(plan.amount) / 100 }}&euro; </v-list-tile-title>
-                      <v-list-tile-sub-title>Payment every {{ plan.interval_count === 1 ? '' : plan.interval_count }} {{ plan.interval }} ( {{ plan.trial_period_days }} days trial period )</v-list-tile-sub-title>
-                    </v-list-tile-content>
+                <p v-t="'Profile.subscribed'"/>
+                <div v-if="data.userSubscription.planId">
+                  <h2 v-t="'Profile.subtitle'"/>
+                  <v-list>
+                    <template
+                      v-for="plan in data.plans.filter( ({ id }) => id === data.userSubscription.planId)"
+                    >
+                      <v-list-tile :key="plan.id">
+                        <v-list-tile-content>
+                          <v-list-tile-title>{{ plan.nickname }}: {{ parseInt(plan.amount) / 100 }}&euro; </v-list-tile-title>
+                          <v-list-tile-sub-title>{{ $tc('Profile.plan_info', plan.interval, {period: plan.interval, count: plan.interval_count, trialDays: plan.trial_period_days}) }}</v-list-tile-sub-title>
+                        </v-list-tile-content>
 
-                    <v-list-tile-action>
-                      <v-icon color="green">check</v-icon>
-                    </v-list-tile-action>
-                  </v-list-tile>
-                </v-list>
+                        <v-list-tile-action>
+                          <v-btn icon >
+                            <v-icon color="green">check</v-icon>
+                          </v-btn>
+                        </v-list-tile-action>
+                      </v-list-tile>
+                    </template>
+                  </v-list>
+                </div>
               </div>
+              <template v-else>
+                <div>
+                  <p v-t="'Profile.not_subscribed'"/>
+                </div>
+                <div v-if="data && data.plans">
+                  <h2 v-t="'Profile.subtitle'"/>
+                  <v-list>
+                    <template
+                      v-for="(plan, index) in data.plans"
+                    >
+                      <v-list-tile
+                        :key="plan.id"
+                        ripple
+                        @click="selectedPlan = plan.id">
+                        <v-list-tile-content>
+                          <v-list-tile-title>{{ plan.nickname }}: {{ parseInt(plan.amount) / 100 }}&euro; </v-list-tile-title>
+                          <v-list-tile-sub-title>{{ $tc('Profile.plan_info', plan.interval, {period: plan.interval, count: plan.interval_count, trialDays: plan.trial_period_days}) }}</v-list-tile-sub-title>
+                        </v-list-tile-content>
+
+                        <v-list-tile-action>
+                          <v-btn icon @click="selectedPlan = plan.id">
+                            <v-icon v-if="selectedPlan === plan.id" color="green">check</v-icon>
+                            <v-icon v-else>check</v-icon>
+                          </v-btn>
+                        </v-list-tile-action>
+                      </v-list-tile>
+                      <v-divider
+                        v-if="index + 1 < data.plans.length"
+                        :key="index"
+                      />
+                    </template>
+                  </v-list>
+                </div>
+              </template>
               <div v-if="data && data.userSubscription.status === false">
                 <v-form>
-                  <h2>Payment details:</h2>
+                  <h2 v-t="'Profile.payment_details'"/>
                   <v-layout row wrap>
                     <v-flex xs12 sm8>
                       <card
@@ -52,13 +87,12 @@
                       sm3
                       offset-sm1>
                       <v-btn
-                        :disabled="!complete"
+                        v-t="'btn.submit_payment'"
+                        :disabled="!complete || !selectedPlan"
                         :loading="loading"
                         block
                         color="primary"
-                        @click="pay">
-                        Submit payment
-                      </v-btn>
+                        @click="pay"/>
                     </v-flex>
                     <v-flex
                       xs12
@@ -96,6 +130,7 @@ export default {
     stripe: process.env.VUE_APP_STRIPE_KEY,
     complete: false,
     loading: false,
+    selectedPlan: null,
     stripeOptions: {
       base: {
         color: '#303238',
@@ -122,7 +157,7 @@ export default {
   methods: {
     pay: async function() {
       if (this.user.email_verified === false) {
-        this.$store.dispatch('message/add', 'Verify your email before submiting the payment.')
+        this.$store.dispatch('message/add', this.$i18n.t('Profile.verify_email'))
         return false
       }
 
@@ -142,7 +177,8 @@ export default {
         variables: {
           name: `${this.user.name} ${this.user.family_name}`,
           email: this.user.email,
-          source: data.token.id
+          source: data.token.id,
+          planId: this.selectedPlan
         }
       })
 
