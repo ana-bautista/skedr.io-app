@@ -41,7 +41,7 @@
 		"article1": "Sharing an existing photo",
 		"article2": "Group tagging",
 		"articles": "Articles",
-		"autoimport_tags": "Autoimport Tags",
+		"autoimport_tags": "Auto-import Tags",
 		"changelog": "Change log",
 		"clear_filter": "Clear filter",
 		"clear_queue": "Clear photos from queue",
@@ -90,7 +90,7 @@
 	},
 	"SignupUser": {
 		"account_created": "Account created successfully",
-		"code_sent": "Confirmation code has been successfuly sent",
+		"code_sent": "Confirmation code has been successfully sent",
 		"code_validate": "Code validated",
 		"step1": "Sign up with Flickr",
 		"step1_desc": "First we need to connect to you Flickr account. Upon pressing Connect button you will  be redirected to your Flickr account to grant us access.",
@@ -123,7 +123,7 @@
 		"reset": "reset",
 		"save": "save",
 		"send": "send",
-		"signup": "signup",
+		"signup": "sign up",
 		"submit_payment": "submit payment",
 		"update": "update",
 		"validating_account": "validating account"

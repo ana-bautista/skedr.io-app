@@ -3,7 +3,7 @@
 		"already_account": "¿Ya tienes una cuenta?",
 		"demo_account": "Cuenta de prueba",
 		"login": "Iniciar sesión",
-		"not_account": "¿Aun no tiene una cuenta?",
+		"not_account": "¿Aun no tienes una cuenta?",
 		"reset_or_try_demo": "{reset_password} | Prueba nuestra {demo_account}",
 		"sign_up": "Regístrate"
 	},
@@ -14,24 +14,24 @@
 		"title": "Únete al grupo de Flickr"
 	},
 	"ConfirmAccount": {
-		"label1": "Ingresa su ID de flickr",
-		"label2": "Ingrese su código",
+		"label1": "Ingresa tu ID de flickr",
+		"label2": "Ingresa tu código",
 		"step1": "Para confirmar tu cuenta necesitamos tu ID de Flickr. Puedes ir a <a href=\"https://www.flickr.com/services/api/explore/flickr.people.getInfo\" target=\"_blank\">https://www.flickr.com/services/api/explore/flickr.people.getInfo</a> y copiar el valor en 'Su ID de usuario:'. <br>Si tienes algún problema, envíanos un correo electrónico a <a href=\"mailto:info@skedr.io\">info@skedr.io</a>",
 		"step2": "Te hemos enviado un correo electrónico con un código de validación. Por favor, pega el código aquí para confirmar tu cuenta. Si no la has recibido en unos minutos, comprueba tu carpeta de spam.",
 		"title": "Confirmar cuenta"
 	},
 	"GroupTag": {
 		"count_tags": "{count} / {total} fotos tienen la etiqueta '{name}'",
-		"error": "No pudimos recuperar tus datos.",
+		"error": "No hemos podido recuperar tus datos.",
 		"error_saving_tag": "Error al guardar la etiqueta",
 		"no_data": "No hemos podido sugerir etiquetas. Pulsa <kbd>enter</kbd> para agregar una.",
 		"no_photos_found": "No tienes fotos con la etiqueta '{tag}'",
 		"not_enought_data": "No hay suficientes datos",
 		"not_enought_data_suggestion": "Agrega más etiquetas a tus fotos de este grupo",
 		"only_new_photos": "Importar solo fotos nuevas",
-		"only_new_photos_hint1": "Solo se agregarán las fotos nuevas de su galería de fotos con las etiquetas seleccionadas. Si quieres agregar todas tus fotos actuales que coincidan con <strong>[{comboTags}]</strong> deshabilita esta opción.",
-		"only_new_photos_hint2": "Se agregarán todas las fotos que coincidan con <strong>[{comboTags}]</strong> . Puedes revisar cuales fotos serán agregadas abajo.",
-		"photo_limit": "Este grupo contará hacia el límite de fotos <br>(60 para miembros Pro, 30 para miembros gratuitos). <br>Pídale al administrador que cambie esta configuración.",
+		"only_new_photos_hint1": "Solo se agregarán las fotos nuevas de tu galería de fotos con las etiquetas seleccionadas. Si quieres agregar todas tus fotos actuales que coincidan con <strong>[{comboTags}]</strong>, deshabilita esta opción.",
+		"only_new_photos_hint2": "Se añadirán todas las fotos que coincidan con <strong>[{comboTags}]</strong> . Puedes revisar cuales fotos serán añadidas abajo.",
+		"photo_limit": "Este grupo contará hasta el límite de fotos <br>(60 para miembros Pro, 30 para miembros gratuitos). <br>Pide al administrador que cambie esta configuración.",
 		"suggest_tags": "Sugerir etiquetas",
 		"tags": "Etiquetas",
 		"tags_hint": "Usa letras minúsculas y números.",
@@ -48,16 +48,16 @@
 		"favorites": "Favoritos",
 		"feedback": "Enviar comentarios",
 		"groups_added": "Grupos añadidos",
-		"no_notifications": "No tienes notificaciones.",
+		"no_notifications": "No tienes notificaciones",
 		"no_photos_scheduled": "No tienes ninguna foto programada para compartir",
-		"photostream": "Galería",
+		"photostream": "Galería de fotos",
 		"photostream_empty": "Tu galería de fotos está vacía. Sube algunas fotos en Flickr",
 		"private_image": "Imagen privada",
 		"profile": "Perfil",
 		"scheduled_photos": "Fotos programadas",
 		"scheduled_to_delete": "Programado para eliminar",
 		"sign_out": "Desconectar",
-		"sked_photos": "Fotos de sked",
+		"sked_photos": "Fotos de Sked",
 		"views": "Visitas"
 	},
 	"LoginUser": {
@@ -65,13 +65,13 @@
 		"login_successful": "Has iniciado sesión"
 	},
 	"Profile": {
-		"not_subscribed": "No estás suscrito a Skedr.io. Por favor considera apoyar el proyecto. Estamos ofreciendo un descuento especial para todos los usuarios pioneros. Beneficiate de un descuento del 50% en un pago mensual.",
-		"payment_details": "Detalles del pago:",
+		"not_subscribed": "No estás suscrito a Skedr.io. Por favor considera apoyar el proyecto. Estamos ofreciendo un descuento especial para todos los primeros usuarios. Beneficiate de un descuento del 50% en un pago mensual.",
+		"payment_details": "Detalles de pago:",
 		"plan_info": "Pago cada {period} ({trialDays} días período de prueba) | Pago cada {count} {period} ({trialDays} días de período de prueba)",
 		"subscribed": "¡Gracias por suscribirte! Tu apoyo significa mucho.",
 		"subtitle": "plan",
 		"title": "Suscripción",
-		"verify_email": "Verifica tu correo electrónico antes de enviar el pago."
+		"verify_email": "Verifica tu correo electrónico antes de enviar el pago"
 	},
 	"ResetPassword": {
 		"code_sent": "Código enviado a su correo electrónico",
@@ -89,8 +89,8 @@
 		"shared_groups": "Foto no compartida en grupos | Compartida en 1 grupo | Compartida en {count} grupos"
 	},
 	"SignupUser": {
-		"account_created": "Cuenta creada exitosamente",
-		"code_sent": "El código de confirmación ha sido enviado exitosamente.",
+		"account_created": "Cuenta creada con éxito",
+		"code_sent": "El código de confirmación ha sido enviado con éxito.",
 		"code_validate": "Código validado",
 		"step1": "Registrarse en Flickr",
 		"step1_desc": "Primero necesitamos conectarnos a tu cuenta de Flickr. Al presionar el botón Conectar, serás redirigido a tu cuenta de Flickr para permitirnos el acceso.",
@@ -135,14 +135,14 @@
 		"family_name": "Apellido",
 		"first_name": "Nombre",
 		"new_password": "Introduce la nueva contraseña",
-		"password": "Ingresa tu contraseña",
+		"password": "Introduce tu ID de flickr",
 		"search": "Buscar"
 	},
 	"loading": "Cargando ...",
 	"validation": {
 		"incorrect_flickr_id": "ID de Flickr incorrecto. Debería ser como: 123456789@N01",
 		"invalid_email": "Correo electrónico inválido.",
-		"message": "Utiliza por lo menos 8 caracteres. Incluea letras mayúsculas y minúsculas, un número y un carácter especial.",
+		"message": "Utiliza por lo menos 8 caracteres. Incluye letras mayúsculas y minúsculas, un número y un carácter especial.",
 		"required": "Necesario.",
 		"use_numbers": "Números de usuario solamente"
 	}

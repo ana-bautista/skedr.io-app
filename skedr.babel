@@ -613,7 +613,7 @@
                             </translation>
                             <translation>
                                 <language>fr-FR</language>
-                                <approved>false</approved>
+                                <approved>true</approved>
                             </translation>
                             <translation>
                                 <language>es-ES</language>
@@ -727,7 +727,7 @@
                             </translation>
                             <translation>
                                 <language>es-ES</language>
-                                <approved>false</approved>
+                                <approved>true</approved>
                             </translation>
                         </translations>
                     </concept_node>
@@ -996,7 +996,7 @@
                             </translation>
                             <translation>
                                 <language>fr-FR</language>
-                                <approved>false</approved>
+                                <approved>true</approved>
                             </translation>
                             <translation>
                                 <language>es-ES</language>
@@ -1824,7 +1824,7 @@
                             </translation>
                             <translation>
                                 <language>fr-FR</language>
-                                <approved>false</approved>
+                                <approved>true</approved>
                             </translation>
                             <translation>
                                 <language>es-ES</language>
@@ -2297,7 +2297,7 @@
                     </translation>
                     <translation>
                         <language>es-ES</language>
-                        <approved>false</approved>
+                        <approved>true</approved>
                     </translation>
                 </translations>
             </concept_node>
@@ -2405,7 +2405,7 @@
                             </translation>
                             <translation>
                                 <language>es-ES</language>
-                                <approved>false</approved>
+                                <approved>true</approved>
                             </translation>
                         </translations>
                     </concept_node>
@@ -2439,15 +2439,15 @@
                         <translations>
                             <translation>
                                 <language>en-US</language>
-                                <approved>false</approved>
+                                <approved>true</approved>
                             </translation>
                             <translation>
                                 <language>fr-FR</language>
-                                <approved>false</approved>
+                                <approved>true</approved>
                             </translation>
                             <translation>
                                 <language>es-ES</language>
-                                <approved>false</approved>
+                                <approved>true</approved>
                             </translation>
                         </translations>
                     </concept_node>
@@ -2574,7 +2574,7 @@
                             </translation>
                             <translation>
                                 <language>fr-FR</language>
-                                <approved>false</approved>
+                                <approved>true</approved>
                             </translation>
                             <translation>
                                 <language>es-ES</language>
