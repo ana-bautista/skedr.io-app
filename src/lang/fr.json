@@ -93,7 +93,7 @@
 		"code_sent": "Le code de confirmation a été envoyé avec succès",
 		"code_validate": "Code validé",
 		"step1": "Inscrivez-vous avec Flickr",
-		"step1_desc": "Nous devons d’abord nous connecter à votre compte Flickr. <br>En appuyant sur le bouton Connecter, vous serez redirigé vers votre compte Flickr pour nous permettre d'y accéder.",
+		"step1_desc": "Nous devons d’abord nous connecter à votre compte Flickr. En appuyant sur le bouton Connecter, vous serez redirigé vers votre compte Flickr pour nous permettre d'y accéder.",
 		"step2": "Créez votre compte",
 		"step3": "Validez votre émail",
 		"step3_desc": "Nous vous avons envoyé un e-mail avec un code de validation. Veuillez coller le code ici pour valider votre e-mail. Si vous ne l'avez pas reçu dans quelques minutes, vérifiez votre dossier de courrier indésirable.",
