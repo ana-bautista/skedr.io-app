@@ -24,12 +24,12 @@
 		"count_tags": "{count} / {total} fotos tienen la etiqueta '{name}'",
 		"error": "No hemos podido recuperar tus datos.",
 		"error_saving_tag": "Error al guardar la etiqueta",
-		"no_data": "No hemos podido sugerir etiquetas. Pulsa <b>enter</b> para agregar una.",
+		"no_data": "No hemos podido sugerir etiquetas. Pulsa <kbd>Enter</kbd> para agregar una.",
 		"no_photos_found": "No tienes fotos con la etiqueta '{tag}'",
 		"not_enought_data": "No hay suficientes datos",
 		"not_enought_data_suggestion": "Agrega más etiquetas a tus fotos de este grupo",
 		"only_new_photos": "Importar solo fotos nuevas",
-		"only_new_photos_hint1": "Solo se agregarán las fotos nuevas de tu galería de fotos con las etiquetas seleccionadas. Si quieres agregar todas tus fotos actuales que coincidan con <strong>[{comboTags}]</strong>, deshabilita esta opción.",
+		"only_new_photos_hint1": "Solo se añadirán las fotos nuevas de tu galería con las etiquetas seleccionadas. Si quieres añadir todas tus fotos actuales que coincidan con <strong>[{comboTags}]</strong>, deshabilita esta opción.",
 		"only_new_photos_hint2": "Se añadirán todas las fotos que coincidan con <strong>[{comboTags}]</strong> . Puedes revisar cuales fotos serán añadidas abajo.",
 		"photo_limit": "Este grupo contará hasta el límite de fotos <br>(60 para miembros Pro, 30 para miembros gratuitos). <br>Pide al administrador que cambie esta configuración.",
 		"suggest_tags": "Sugerir etiquetas",
@@ -57,7 +57,7 @@
 		"scheduled_photos": "Fotos programadas",
 		"scheduled_to_delete": "Programado para eliminar",
 		"sign_out": "Desconectar",
-		"sked_photos": "Fotos de Sked",
+		"sked_photos": "Sked fotos",
 		"views": "Visitas"
 	},
 	"LoginUser": {

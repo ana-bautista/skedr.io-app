@@ -24,7 +24,7 @@
 		"count_tags": "{count} / {total} photos portent l'étiquette '{name}'",
 		"error": "Nous n'avons pas pu récupérer vos données",
 		"error_saving_tag": "Erreur lors de l'enregistrement de l'étiquette",
-		"no_data": "Nous ne pourrions pas suggérer des étiquettes. Appuyez sur <b>entrez</b> pour en ajouter une.",
+		"no_data": "Nous ne pourrions pas suggérer des étiquettes. Appuyez sur <kbd>Enter</kbd> pour en ajouter une.",
 		"no_photos_found": "Vous n'avez pas de photos avec l'étiquette '{tag}'",
 		"not_enought_data": "Pas assez de données",
 		"not_enought_data_suggestion": "Ajouter plus d'étiquettes à vos photos de ce groupe",
@@ -40,7 +40,7 @@
 	"Layout": {
 		"article1": "Partage d'une photo existante",
 		"article2": "Marquage de groupe",
-		"articles": "Blog (en anglais)",
+		"articles": "Blogue (en anglais)",
 		"autoimport_tags": "Étiquettes d'importation automatique",
 		"changelog": "Registre de modifications",
 		"clear_filter": "Effacer le filtre",
@@ -57,7 +57,7 @@
 		"scheduled_photos": "Photos prévues",
 		"scheduled_to_delete": "Prévu pour supprimer",
 		"sign_out": "Déconnexion",
-		"sked_photos": "Photos de Sked",
+		"sked_photos": "Sked photos",
 		"views": "Vues"
 	},
 	"LoginUser": {
